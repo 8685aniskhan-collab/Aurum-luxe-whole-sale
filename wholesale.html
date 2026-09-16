@@ -1,0 +1,274 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AURUM LUXE — Wholesale Luxury</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav>
+    <a class="logo" href="wholesale.html">AURUM <span>LUXE</span></a>
+    <ul>
+      <li><a href="#collections">Collections</a></li>
+      <li><a href="#products">Products</a></li>
+      <li><a href="#why-us">Why Us</a></li>
+      <li><a href="#pricing">Pricing</a></li>
+      <li><a href="#connect">Connect</a></li>
+    </ul>
+    <button class="nav-btn" onclick="document.getElementById('connect').scrollIntoView({ behavior: 'smooth' })">Contact</button>
+  </nav>
+
+  <header class="hero">
+    <div class="hero-bg"></div>
+    <span class="hero-line"></span>
+    <span class="hero-line"></span>
+    <div class="hero-content">
+      <span class="hero-tag">Wholesale Luxury</span>
+      <h1>Curated luxury for <em>international boutiques</em></h1>
+      <p>Discover a private collection of handcrafted couture, premium goods, and curated inventory designed for wholesale partners that demand refinement and bespoke service.</p>
+      <div class="hero-btns">
+        <a class="btn-primary" href="#products">Shop Wholesale</a>
+        <a class="btn-outline" href="#pricing">Pricing Plans</a>
+      </div>
+    </div>
+    <div class="hero-stats">
+      <div class="stat">
+        <div class="stat-num">120+</div>
+        <div class="stat-label">Bespoke Products</div>
+      </div>
+      <div class="stat">
+        <div class="stat-num">35</div>
+        <div class="stat-label">Global Partners</div>
+      </div>
+      <div class="stat">
+        <div class="stat-num">24/7</div>
+        <div class="stat-label">Dedicated Support</div>
+      </div>
+    </div>
+  </header>
+
+  <section class="marquee-wrap">
+    <div class="marquee">
+      <span>Luxury Leather</span>
+      <span class="sep">—</span>
+      <span>Fine Jewelry</span>
+      <span class="sep">—</span>
+      <span>Beauty Elevation</span>
+      <span class="sep">—</span>
+      <span>Elite Curation</span>
+      <span class="sep">—</span>
+      <span>Private Access</span>
+      <span class="sep">—</span>
+      <span>Qualified Wholesale Only</span>
+    </div>
+  </section>
+
+  <section id="collections" class="categories">
+    <div class="section-label">Featured categories</div>
+    <h2 class="section-title">Premium collections for global buyers</h2>
+    <p class="section-copy">Each category blends heritage craftsmanship with high-grade materials to support your boutique with exclusive items and assured margins.</p>
+    <div class="cat-grid">
+      <article class="cat-card">
+        <div class="cat-info">
+          <div class="cat-name">Fine Jewelry</div>
+          <div class="cat-count">Handpicked artisans · 68 pieces</div>
+        </div>
+      </article>
+      <article class="cat-card">
+        <div class="cat-info">
+          <div class="cat-name">Luxury Leather</div>
+          <div class="cat-count">Limited runs · 72 pieces</div>
+        </div>
+      </article>
+      <article class="cat-card">
+        <div class="cat-info">
+          <div class="cat-name">Beauty Rituals</div>
+          <div class="cat-count">Signature sets · 52 pieces</div>
+        </div>
+      </article>
+      <article class="cat-card">
+        <div class="cat-info">
+          <div class="cat-name">Signature Bags</div>
+          <div class="cat-count">Exclusive carryalls · 54 pieces</div>
+        </div>
+      </article>
+      <article class="cat-card">
+        <div class="cat-info">
+          <div class="cat-name">Timeless Watches</div>
+          <div class="cat-count">Precision timepieces · 46 pieces</div>
+        </div>
+      </article>
+      <article class="cat-card">
+        <div class="cat-info">
+          <div class="cat-name">Designer Shoes</div>
+          <div class="cat-count">Statement footwear · 58 pieces</div>
+        </div>
+      </article>
+      <article class="cat-card">
+        <div class="cat-info">
+          <div class="cat-name">Luxury Glasses</div>
+          <div class="cat-count">Optic couture · 38 pieces</div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section id="products" class="products">
+    <div class="products-header">
+      <div>
+        <div class="section-label">Collection showcase</div>
+        <h2 class="section-title">Wholesale catalog built for buying teams</h2>
+      </div>
+      <div class="filter-tabs" id="filterTabs">
+        <button class="filter-tab active" data-category="all">All</button>
+        <button class="filter-tab" data-category="Jewelry">Jewelry</button>
+        <button class="filter-tab" data-category="Leather">Leather</button>
+        <button class="filter-tab" data-category="Beauty">Beauty</button>
+        <button class="filter-tab" data-category="Bags">Bags</button>
+        <button class="filter-tab" data-category="Watches">Watches</button>
+        <button class="filter-tab" data-category="Shoes">Shoes</button>
+        <button class="filter-tab" data-category="Glasses">Glasses</button>
+      </div>
+    </div>
+    <div class="products-grid" id="productsGrid"></div>
+  </section>
+
+  <section id="why-us" class="why">
+    <div class="section-label">Why work with us</div>
+    <h2 class="section-title">Partner-level service with luxury inventory</h2>
+    <p class="section-copy">Aurum Luxe offers curated wholesale offerings with fast fulfillment, transparent pricing, and ongoing buying support so your store remains exceptional.</p>
+    <div class="why-grid">
+      <div class="why-features">
+        <div class="why-feature">
+          <div class="feature-icon">✦</div>
+          <div>
+            <h3 class="feature-title">Curated premium stock</h3>
+            <p class="feature-text">Every item is quality-checked and selected for boutique-grade performance and resale appeal.</p>
+          </div>
+        </div>
+        <div class="why-feature">
+          <div class="feature-icon">✦</div>
+          <div>
+            <h3 class="feature-title">Flexible MOQ</h3>
+            <p class="feature-text">Volume options are tailored for new buyers, established retailers, and global showrooms.</p>
+          </div>
+        </div>
+        <div class="why-feature">
+          <div class="feature-icon">✦</div>
+          <div>
+            <h3 class="feature-title">Fast partner onboarding</h3>
+            <p class="feature-text">Streamlined approvals, dedicated account support, and a private wholesale experience.</p>
+          </div>
+        </div>
+      </div>
+      <div class="why-visual">
+        <div class="why-visual-inner">
+          <div class="why-visual-icon">✦</div>
+          <div class="why-visual-text">Luxury inventory, premium partnerships.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="pricing" class="pricing">
+    <div class="section-label">Pricing plans</div>
+    <h2 class="section-title">Wholesale levels for every retail partner</h2>
+    <div class="pricing-grid">
+      <article class="tier-card">
+        <span class="tier-badge">Starter</span>
+        <div class="tier-name">Boutique Starter</div>
+        <div class="tier-price">$3,900</div>
+        <div class="tier-period">per seasonal selection</div>
+        <ul class="tier-features">
+          <li class="included">Minimum 25-piece order</li>
+          <li class="included">Managed assortment</li>
+          <li class="included">Online account access</li>
+          <li>Regional shipping support</li>
+        </ul>
+      </article>
+      <article class="tier-card featured">
+        <span class="tier-badge">Premium</span>
+        <div class="tier-name">Retail Partner</div>
+        <div class="tier-price">$7,500</div>
+        <div class="tier-period">per seasonal selection</div>
+        <ul class="tier-features">
+          <li class="included">Minimum 50-piece order</li>
+          <li class="included">Dedicated account manager</li>
+          <li class="included">Priority replenishment</li>
+          <li class="included">Market trend insights</li>
+        </ul>
+      </article>
+      <article class="tier-card">
+        <span class="tier-badge">Elite</span>
+        <div class="tier-name">Global Showroom</div>
+        <div class="tier-price">$12,000</div>
+        <div class="tier-period">per seasonal selection</div>
+        <ul class="tier-features">
+          <li class="included">Minimum 100-piece order</li>
+          <li class="included">Custom brand packaging</li>
+          <li class="included">Exclusive launches</li>
+          <li class="included">Executive sourcing review</li>
+        </ul>
+      </article>
+    </div>
+  </section>
+
+  <section id="connect" class="cta">
+    <div class="section-label">Work with us</div>
+    <h2>Start your wholesale partnership <em>today</em></h2>
+    <p>Complete the wholesale inquiry below and our team will contact you with account access, MOQ details, and premium sample requests.</p>
+    <form id="inquiryForm" class="cta-form" enctype="multipart/form-data">
+      <input class="cta-input" type="text" name="name" placeholder="Your name" required>
+      <input class="cta-input" type="email" name="email" placeholder="Business email" required>
+      <input class="cta-input" type="text" name="interest" placeholder="Product interest (bags, watches, shoes, glasses)">
+      <label class="file-input">
+        <span>Attach luxury photos or videos</span>
+        <input type="file" name="media" id="mediaUpload" accept="image/*,video/*" multiple>
+      </label>
+      <button type="submit" class="cta-submit">Send Inquiry</button>
+    </form>
+  </section>
+
+  <footer>
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a class="logo" href="wholesale.html">AURUM <span>LUXE</span></a>
+        <p class="footer-desc">A private wholesale platform for luxury boutiques, tailored for curated inventory, fast service, and elegant merchandising.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="#collections">Collections</a></li>
+          <li><a href="#products">Products</a></li>
+          <li><a href="#why-us">Why Us</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="mailto:partners@aurumluxe.com">partners@aurumluxe.com</a></li>
+          <li><a href="#connect">Wholesale Inquiry</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="#">Terms</a></li>
+          <li><a href="#">Privacy</a></li>
+          <li><a href="#">Shipping</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Aurum Luxe Wholesale</span>
+      <span>Designed for premium buyers and boutique insiders</span>
+    </div>
+  </footer>
+
+  <div class="toast" id="toastMessage"></div>
+  <script src="script.js"></script>
+</body>
+</html>
