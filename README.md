@@ -35,7 +35,7 @@ http://localhost:3000
 
 ## Endpoints
 
-- `GET /api/products` — returns the wholesale product catalog
+- `GET /api/products` — returns the wholesale product alog
 - `POST /api/inquiry` — accepts business inquiry submissions
 
 ## Notes
