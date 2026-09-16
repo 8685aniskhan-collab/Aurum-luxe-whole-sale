@@ -18,7 +18,7 @@ function showToast(message) {
 function renderProducts(items) {
   productsGrid.innerHTML = items.map(product => `
     <article class="product-card">
-      <div class="product-img" aria-hidden="true">${product.image}</div>
+      <div class="product-img" aria-hidden="true"><img src="${product.image}" alt="${product.name}"></div>
       <span class="product-badge">${product.category}</span>
       <button class="product-wishlist" type="button" aria-label="Save ${product.name}">♥</button>
       <div class="product-body">
